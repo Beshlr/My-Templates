@@ -1248,6 +1248,10 @@ header {
       
     }
 
+    .final-footer .container .social-icons a{
+        text-decoration: none;
+    }
+
     .final-footer .container .social-icons i{
       cursor: pointer;
       transition: 0.3s;
