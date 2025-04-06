@@ -19,7 +19,7 @@ body{
 .container{
     background-image:
     linear-gradient(to right, #01022de5 30%,#0000007a),
-    url(/images/avatar.jpg)
+    url(../images/avatar.jpg)
     
     ;
     background-repeat: no-repeat;
@@ -33,7 +33,7 @@ body{
 .container:hover{
     background-image:
     linear-gradient(to right, #01022de5 30%,transparent),
-    url(\\images/avatar.jpg)
+    url(../images/avatar.jpg)
     
     ;
 }
