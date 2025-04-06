@@ -28,12 +28,12 @@
             <nav>
                 <i class="fa-solid fa-bars toggle-menu"></i>
                 <ul>
-                    <li><a class = "active" href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a class = "active" href="#landing">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="form">
                     <i class="fas fa-search"></i>
@@ -45,7 +45,7 @@
     <!-- End Header-->
 
      <!-- Start Landing -->
-    <div class="landing">
+    <div class="landing" id="landing">
         <div class="overlay"></div>
         <div class="text">
           <div class="content">
@@ -60,8 +60,8 @@
             </p>
           </div>
         </div>
-        <i class="fas fa-angle-left change-background fa-2x"></i>
-        <i class="fas fa-angle-right change-background fa-2x"></i>
+            <i class="fas fa-angle-left change-background fa-2x" style="color: #777;"></i>
+            <i class="fas fa-angle-right change-background fa-2x" style="color: #777;"></i>
         <ul class="bullets">
             <li></li>
             <li class="active"></li>
@@ -71,7 +71,7 @@
     <!-- End Landing -->
 
     <!-- Start Services -->
-    <div class="services">
+    <div class="services" id="services">
         <div class="container">
             <div class="main-heading">
                 <h2>Services</h2>
@@ -134,7 +134,7 @@
 
     
     <!-- Start Portfolio -->
-    <div class="portfolio">
+    <div class="portfolio" id="portfolio">
         <div class="container">
             <div class="main-heading">
                 <h2>Portfolio</h2>
@@ -234,7 +234,7 @@
 
     
     <!-- Start About -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="container">
             <div class="main-heading">
                 <h2>About Us</h2>
@@ -363,7 +363,7 @@
     <!-- End Quote -->
 
     <!-- Start Pricing -->
-     <div class="pricing">
+     <div class="pricing" id="pricing">
         <div class="container">
             <div class="main-heading">
                 <h2>PRICING</h2>
@@ -448,7 +448,7 @@
      <!-- End Subscribe -->
 
      <!-- Start Contact -->
-     <div class="contact">
+     <div class="contact" id="contact">
         <div class="container">
             <div class="main-heading">
                 <h2>Contact Us</h2>
@@ -487,14 +487,22 @@
             <img src="images/logo.png" alt="Logo">
             <h3>We Are Social</h3>
             <div class="social-icons">
-                <i class="fab fa-facebook-f facebook"></i>
-                <i class="fab fa-twitter twitter"></i>
-                <i class="fas fa-home home"></i>
-                <i class="fab fa-linkedin linkedin"></i>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f facebook" style="color: white;"></i>
+                </a>
+                <a href="https://www.x.com" target="_blank">
+                    <i class="fa-brands fa-x-twitter" style="color: white;"></i>
+                </a>
+                <a href="#landing">
+                    <i class="fas fa-home home" style="color: white;"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin linkedin" style="color: white;"></i>
+                </a>
             </div>
             <div class="copyright">
 
-                <p>&copy; 2025 <span>Kasper</span> All Rights Reserved</p>
+                <p>&copy; 2025 <span><a href="#landing">Kasper</a></span> All Rights Reserved</p>
             </div>
         </div>
      </div>

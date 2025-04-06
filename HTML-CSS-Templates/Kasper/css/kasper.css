@@ -265,11 +265,21 @@ header {
     }
   }
 
+  .landing i{
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
   .landing i:first-of-type{
     left: 30px;
+    z-index: 2;
   }
-  .landing i:Last-of-type{
+  .landing i:last-of-type{
     right: 30px;
+  }
+
+  .landing i:hover{
+    color: white;
   }
 
 
@@ -824,7 +834,7 @@ header {
       border-width: 8px;
       border-color: black transparent transparent;
       top: -15px;
-      right: -10px;
+      right: -8px;
     }
 
   /* End Skills */
@@ -1232,7 +1242,7 @@ header {
       margin-bottom: 50px;
     }
     
-    .final-footer .container .social-icons i:not(:last-child){
+    .final-footer .container .social-icons a:not(:last-child){
       margin-right:30px;
       margin-top: 10px;
       
@@ -1255,9 +1265,10 @@ header {
       transform: translateX(-50%);
     }
 
-    .final-footer .container .copyright span{
+    .final-footer .container .copyright span a{
       color: var(--main-color);
       font-weight: bold;
+      text-decoration: none;
     }
 
     /* End Footer */
