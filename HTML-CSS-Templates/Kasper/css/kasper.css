@@ -198,13 +198,15 @@ header {
     transform: translateY(-50%);
     right: 0;
   }
-
+/* End Header */
+/* Start Landing */
   .landing {
     min-height: 100vh;
     background-color: #1f2021;
     background-image: url("../images/landing.jpg");
     background-size: cover;
     position: relative;
+    z-index:-1;
   }
   .landing .overlay {
     position: absolute;
@@ -305,7 +307,7 @@ header {
 }
 
 
-/* End Header */
+/* End Landing */
 
 /* Start Services */
 
