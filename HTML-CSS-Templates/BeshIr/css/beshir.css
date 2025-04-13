@@ -766,8 +766,17 @@ ul{
 
 .team-members .item{
   position: relative;
+  transition: var(--main-transition);
 }
-.team-members .item:before{
+
+.team-members .item::before{
+  width: calc(100% - 60px);
+  z-index: -2;
+}
+
+.team-members .item::before,
+.team-members .item::after
+{
   content: "";
   background-color: #f3f3f3;
   position: absolute;
@@ -777,15 +786,43 @@ ul{
   border-radius: 10px;
   transition: var(--main-transition);
 }
+.team-members .item::after{
+  width: 0;
+  z-index: -1;
+  background: #e4e4e4;
+}
+
+.team-members .item:hover::after{
+  width: calc(100% - 60px);
+}
+
+.team-members .item:hover::before{
+  box-shadow: 0px 6px 10px rgb(0 0 0 / 50%);
+}
+
+.team-members .item:hover .image img{
+  filter: grayscale(1);
+}
+
+.team-members .item:hover{
+  transform: scale(1.1);
+  
+}
 
 .team-members .item .data{
   padding-top: 60px;
   display: flex;
   align-items: center;
 }
+
+.team-members .item .image{
+  max-width: calc(100% - 60px);
+}
+
 .team-members .item .image img{
-  width: calc(100% - 60px);
+  width:100%;
   border-radius: 10px;
+  transition: var(--main-transition);
 }
 
 .team-members .item .icons{
@@ -793,12 +830,13 @@ ul{
   flex-direction: column;
   width: 60px;
   gap: 20px;
+  align-items: center;
   
 }
 
 .team-members .item .icons a{
   display: flex;
-  width: 100%;
+  width: 60px;
   text-decoration: none;
   height: 30px;
   align-items: center;
@@ -807,6 +845,10 @@ ul{
 .team-members .item .icons i{
   color: #777;
   transition: var(--main-transition);
+}
+
+.team-members .item .icons i:hover{
+  color: var(--main-color);
 }
 
 .team-members .item .text{
