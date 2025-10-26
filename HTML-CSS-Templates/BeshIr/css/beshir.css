@@ -1093,6 +1093,494 @@ ul{
   font-size: 18px;
 }
 /* End Works Steps */
+/* Start Events */
+
+.events{
+  padding: var(--main-padding) 0;
+  position: relative;
+}
+.events .container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.events img{
+  max-width: 450px;
+}
+
+@media (max-width:991px) {
+  .events img{
+    display: none;
+  }
+
+}
+.events .dots{
+  background-image: url(..//images/dots.png);
+  height: 186px;
+  width: 204px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.events .up-dots{
+top: 200px;
+    right: 0;
+}
+
+.events .down-dots{
+  bottom:200px;
+  left:0;
+  
+}
+.events .timer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.events .info .timer .unit:hover ,
+.events .info .timer .unit:hover span:last-child{
+  border-color: var(--main-color);
+}
+.events .info{
+  flex: 1;
+}
+.events .timer .unit{
+  width: 75px;
+  border: 1px solid #d4d4d4;
+  text-align: center;
+  color: var(--main-color);
+  border-radius: 6px;
+  transition: var(--main-transition);
+}
+
+.events .info .timer .unit span {
+  display: block;
+  transition: var(--main-transition);
+}
+.events .info .timer .unit span:first-child {
+  font-size: 35px;
+  padding: 15px;
+  color: var(--main-color);
+  font-weight: bold;
+}
+.events .info .timer .unit span:last-child {
+  padding: 8px 10px;
+  font-size: 13px;
+  border-top: 1px solid #d4d4d4;
+}
+
+.events .text{
+  margin-top: 40px;
+  text-align: center;
+}
+.events .text h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.events .text p{
+    font-size: 19px;
+    font-weight: bold;
+    color: #777;
+    line-height: 1.7;
+}
+.events .Subscribe{
+  width: 100%;
+  margin-top: 50px;
+}
+
+.events .Subscribe form{
+    width: 600px;
+    background-color: #f6f5f5;
+    padding:30px;
+    margin: 20px auto;
+    display: flex;
+    border-radius: 50px;
+    gap: 10px;
+    transition: var(--main-transition);
+}
+.events .Subscribe input{ 
+    width: 400px;
+    border-style: none;
+    padding: 20px;
+    border-radius: 50px;
+    flex: 1;
+    transition: var(--main-transition);
+}
+
+.events .Subscribe form input[type="email"]:focus {
+  outline: none;
+}
+.events .Subscribe form input[type="email"]::placeholder {
+  transition: opacity var(--main-transition);
+}
+.events .Subscribe form input[type="email"]:focus::placeholder {
+  opacity: 0;
+}
+.events .Subscribe button{
+  padding: 20px;
+  color: white;
+  background-color: var(--main-color);
+  border-style: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.events .Subscribe button:hover{
+  background-color: var(--main-color-alt);
+}
+
+/* End Events */
+
+/* Start Pricing */
+.pricing{
+  padding: var(--main-padding) 0;
+  background: var(--alt-section-background);
+  position: relative;
+}
+.pricing .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  position: relative;
+}
+.pricing img{
+  max-width: 450px;
+}
+.pricing .dots{
+  background-image: url(..//images/dots.png);
+  height: 186px;
+  width: 204px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.pricing .up-dots{
+top: 200px;
+    right: 0;
+}
+
+.pricing .down-dots{
+  bottom:200px;
+  left:0;
+  
+}
+
+.pricing .box{
+  position: relative;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  overflow: hidden;
+  z-index: 1;
+  transition: var(--main-transition);
+}
+
+@media (max-width: 1199px) {
+  
+}
+
+.pricing .box::after{
+  right: 0;
+  bottom: 0;
+}
+
+.pricing .box::before{
+  left: 0;
+  top: 0;
+}
+
+.pricing .box::before,
+.pricing .box::after{
+  content: "";
+  position: absolute;
+  background-color: #f6f6f6;
+  width: 0;
+  height: 50%;
+  z-index: -1;
+  transition: var(--main-transition);
+}
+
+.pricing .box:hover::after,
+.pricing .box:hover::before{
+  width: 100%;
+}
+
+.pricing .Advanced{
+  top: -25px;
+}
+
+@media (max-width: 1199px){
+  .pricing .Advanced{
+    top: 0;
+  }
+  
+}
+
+.pricing .Advanced .label{
+  position: absolute;
+  writing-mode: vertical-lr;
+  right: 20px;
+  top: 0;
+  font-size: 20px;
+  background-color: var(--main-color-alt);
+  color: white;
+  padding: 10px 10px 40px 10px;
+}
+.pricing .Advanced .label::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -4px;
+    border-style: solid;
+    border-color: transparent transparent white;
+    border-width: 25px;
+}
+
+.pricing .box img{
+  max-width: 80px;
+  margin: 15px auto
+}
+
+.pricing .box p:first-child{
+  font-size: 24px;
+  margin: 30px 0;
+  /* letter-spacing: 1in; */
+}
+
+.pricing .box .Price{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.pricing .box .Price p:first-of-type{
+  font-size: 60px;
+  color: var(--main-color);
+  margin: 15px 0 10px;
+  
+}
+
+.pricing .box .Price p:last-of-type{
+  color: #777;
+  width: fit-content;
+}
+
+.pricing .box ul{
+  width: 100%;
+  margin: 10px auto;
+  text-align: left;
+
+}
+
+.pricing .box ul li{
+  padding: 20px;
+  border-top: 1px solid #eee ;
+}
+
+.pricing .box ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00c";
+    margin-right: 10px;
+    font-weight: 900;
+    color: var(--main-color);
+}
+
+.pricing .box a{
+  text-decoration: none;
+  color: var(--main-color-alt);
+  padding: 15px 20px;
+  border: 2px solid var(--main-color);
+  border-radius: 5px;
+  transition: var(--main-transition);
+  margin: 30px auto;
+}
+
+.pricing .box a:hover{
+  color: white;
+  background-color: var(--main-color-alt);
+}
+/* End Pricing */
+
+/* Start Video */
+
+.video {
+  padding-top: var(--main-padding);
+  padding-bottom: var(--main-padding);
+}
+
+.video .container{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width:991px) {
+    .video .container{
+      flex-direction: column;
+    }
+}
+
+.video .list{
+ border: 1px solid #DDDDDD;
+ min-width: 300px;
+}
+
+
+.video .list .name{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 20px;
+  background-color: #F4F4F4;
+  
+
+}
+
+.video .list li{
+  border-top: 1px solid #dddddd;
+  padding: 20px;
+}
+
+.video .list li:hover{
+  color: var(--main-color);
+  background-color: #FAFAFA;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+.video .list li .time{
+  color: #777;
+  margin-top: 10px;
+  display: block;
+}
+
+.video .preview{
+  padding:10px;
+  background-color: #E2E2E2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.video .preview img{
+  max-width: 100%;
+}
+
+.video .preview p{
+  padding: 20px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+/* End Video */
+
+/* Start Stats */
+.stats{
+  padding: var(--main-padding) 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(/images/stats.jpg);
+  background-size: cover;
+  min-height: 300px;
+  position: relative;
+}
+
+.stats::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(255 255 255 / 95%);
+}
+
+.stats h2{
+  z-index: 1;
+  font-size: 40px;
+}
+
+.stats .container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  
+  gap: 20px;
+  z-index: 1;
+}
+
+.stats .box{
+  color: #313232;
+  padding: 25px 40px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  position: relative;
+  transition: var(--main-transition);
+}
+
+.stats .box:hover{
+  color: black;
+}
+
+.stats .box::after,
+.stats .box::before{
+  content: "";
+  width:2px;
+  height: 0;
+  position: absolute;
+  background-color: var(--main-color);
+  transition:1s
+}
+
+.stats .box::before{
+  right: 0;
+  top: 0;
+}
+.stats .box::after
+{
+  left: 0;
+  bottom: 0;
+}
+
+.stats .box:hover::after,
+.stats .box:hover::before{
+  height: 100%;
+}
+
+.stats .box i{
+  font-weight: 900;
+}
+
+
+.stats .box .num{
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.stats .box .title{
+  color: #4CABF5;
+  margin-top: 10px;
+  font-style: italic;
+  font-size: 20px;
+  transition: var(--main-transition);
+}
+
+.stats .box:hover .title{
+  color: #2196F3;
+}
+
+/* End Stats */
+
 /* Start Animations */
 
 @keyframes up-and-down{
