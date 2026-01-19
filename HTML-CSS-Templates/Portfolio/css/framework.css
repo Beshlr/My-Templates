@@ -2,11 +2,30 @@
 .d-flex{
     display: flex;
 }
+.d-grid{
+    display: grid;
+}
+.d-block{
+    display: block;
+}
+
+@media (max-width:767px) {
+    .block-mobile{
+        display: block;
+    }
+    .hide-mobile{
+        display: none;
+    }
+    .mobile-
+}
 .align-center{
     align-items: center;
 }
 .between-flex{
     justify-content: space-between;
+}
+.around-flex{
+    justify-content: space-around;
 }
 /* End Box */
 .rad-6{
@@ -19,14 +38,26 @@
 .bg-F6{
     background-color: #F6F6F6;
 }
+.bg-eee{
+    background-color: #EEEEEE;
+}
 .bg-white{
     background-color: white;
+}
+.bg-blue{
+    background-color: var(--blue-color);
 }
 .c-black{
     color: black;
 }
+.c-gray{
+    color: var(--grey-color);
+}
+.c-white{
+    color: white;
+}
 /* End Color */
-/* Start Padding + Margin */
+/* Start Padding + Margin + Gap*/
 .p-10{
     padding: 10px;
 }
@@ -42,12 +73,31 @@
 .ml-10{
     margin-left: 10px;
 }
+.ml-20{
+    margin-left: 20px;
+}
 .mb-5{
     margin-bottom: 5px;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+
+.gap-20{
+    gap: 20px;
 }
 /* Start width */
 .wd-100{
     width: 100%;
+}
+.wd-fit{
+    width: fit-content;
 }
 
 /* End width */
@@ -57,14 +107,24 @@
 .p-relative{
     position: relative;
 }
+.p-absolute{
+    position: absolute;
+}
 /* End Position */
 /* Start Font */
+@media (max-width:767px) {
+    .txt-c-mobile{
+        text-align: center;
+    }
+}
 .txt-c{
     text-align: center;
 }
 .fs-14{
     font-size: 14px;
 }
+
+.wi
 /* End Font */
 
 /* Start Transitions */
@@ -72,3 +132,12 @@
     transition: 0.2s;
 }
 /* End Transitions */
+
+/* Start Shapes */
+
+.btn-shape{
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+/* End Shapes */
