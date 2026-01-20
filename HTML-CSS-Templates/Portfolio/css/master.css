@@ -34,6 +34,9 @@ body{
 a{
     text-decoration: none;
 }
+textarea{
+    resize: none;
+}
 
 .page{
     background-color: #f1f5f9;
@@ -206,7 +209,7 @@ h1::after{
     }
 }
 
-/* Start Welcome */
+/* Start Welcome Widget*/
 
 .wrapper .welcome{
     overflow: hidden;
@@ -257,9 +260,24 @@ h1::after{
 
     
 }
+/* End Welcome Widget*/
 
+/* Start Quick Draft Widget*/
+.quick-draft textarea{
+    min-height: 180px;
+}
+.quick-draft .save{
+    border: none;
+    margin-left: auto;
+    transition: 0.3s;
+    cursor: pointer;
+}
 
-/* End Welcome */
+.quick-draft .save:hover{
+    background-color: var(--blue-alt-color);
+}
+
+/* End Quick Draft Widget*/
 
 
 /* End Content */
