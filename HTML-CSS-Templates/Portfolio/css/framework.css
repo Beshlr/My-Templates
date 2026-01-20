@@ -16,7 +16,6 @@
     .hide-mobile{
         display: none;
     }
-    .mobile-
 }
 .align-center{
     align-items: center;
@@ -33,6 +32,9 @@
 }
 .rad-10{
     border-radius: 10px;
+}
+.b-none{
+    border: none;
 }
 /* Start Color */
 .bg-F6{
@@ -78,6 +80,12 @@
 }
 .mb-5{
     margin-bottom: 5px;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.mb-20{
+    margin-bottom: 20px;
 }
 .mt-5{
     margin-top: 5px;
