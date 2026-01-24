@@ -4,8 +4,11 @@
 :root{
     --blue-color: #0075ff;
     --blue-alt-color: #0d69d5;
+    --blue-alt2-color: #D6E5FE;
     --orange-color: #f59e0b;
+    --orange-alt-color: #FBEBD5;
     --green-color: #22c55e;
+    --green-alt-color: #DDF3E0;
     --red-color: #f44336;
     --grey-color: #888;
 }
@@ -198,6 +201,7 @@ h1::after{
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width:767px) {
@@ -272,12 +276,84 @@ h1::after{
     transition: 0.3s;
     cursor: pointer;
 }
-
 .quick-draft .save:hover{
     background-color: var(--blue-alt-color);
 }
-
 /* End Quick Draft Widget*/
 
+/* Start Target */
+.target .body{
+    flex-direction: column;
+}
+.target  .target-row{
+    justify-content: center;
+    align-items: center;
+}
+.target  .target-row .icon{
+    width: 80px;
+    height: 80px;
+}
+.target  .target-row:first-child .icon{
+    background-color: #D6E5FE;
+}
+.target  .target-row:nth-child(2) .icon{
+    background-color: #FBEBD5;
+}
+.target  .target-row:last-child .icon{
+    background-color: var(--green-alt-color);
+}
+
+.target  .target-row .details{
+    flex-direction: column;
+    flex: 1;
+}
+.target .target-row .progress:nth-child(1){
+    background-color: #D6E5FE;
+}
+.target .target-row .progress > span{
+    height: 4px;
+}
+.target .target-row .progress .blue::after{
+    content: "80%";
+    background-color: var(--blue-color);
+}
+.target .target-row .progress .orange::after{
+    content: "55%";
+    background-color: var(--orange-color);
+}
+.target .target-row .progress .green::after{
+    content: "75%";
+    background-color: var(--green-color);
+}
+.target .target-row .progress .blue::before{
+    border-top-color: var(--blue-alt-color);
+}
+
+.target .target-row .progress .orange::before{
+    border-top-color: var(--orange-color);
+}
+.target .target-row .progress .green::before{
+    border-top-color: var(--green-color);
+}
+.target .target-row .progress > span::before{
+    content: "";
+    border-color: transparent;
+    border-width: 5px;
+    border-style: solid;
+    position: absolute;
+    top: -11px;
+    right: -10px;
+    transform: translateX(-50%);
+}
+.target .target-row .progress > span:after{
+    position: absolute;
+    top: -34px;
+    right: -18px;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 7px;
+    font-size: 12px;
+}
+/* End Target */
 
 /* End Content */
