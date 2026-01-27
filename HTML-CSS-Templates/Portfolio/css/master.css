@@ -355,5 +355,11 @@ h1::after{
     font-size: 12px;
 }
 /* End Target */
+/* Start Tickets */
+.tickets .body .box{
+    border: 1px solid #ccc;
+    width: calc(50% - 10px);
+}
+/* End Tickets */
 
 /* End Content */
