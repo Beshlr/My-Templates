@@ -425,4 +425,14 @@ h1::after{
 }
 /* End Tasks */
 
+/* Start Top-Search */
+.top-search .row{
+    padding: 15px 0 15px;
+}
+
+.top-search .row .count{
+    padding: 5px 10px;
+}
+/* End Top-Search */
+
 /* End Content */
