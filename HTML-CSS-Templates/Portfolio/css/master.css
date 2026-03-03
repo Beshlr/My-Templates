@@ -435,4 +435,16 @@ h1::after{
 }
 /* End Top-Search */
 
+/* Start Latest Uploads */
+.latest-uploads .upload-row img{
+    width: 40px;
+}
+
+.latest-uploads .upload-row:not(:last-of-type){
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+/* End Latest Uploads */
+
 /* End Content */
