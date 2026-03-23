@@ -561,5 +561,32 @@ h1::after{
 
 /* Start Reminders */
 
+/* Start Latest Post */
+.latest-post img{
+    width: 50px;
+}
+.latest-post .body{
+    flex-direction: column;
+}
+.latest-post .Author{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.latest-post .Author .content{
+    flex-direction: column;
+}
+
+.latest-post > .content{
+    padding: 20px 0 20px;
+    text-transform: capitalize;
+    min-height: 140px;
+    line-height: 1.8;
+    border-bottom: 1px solid #eee;
+}
+
+.latest-post .post-status{
+    margin-top: 20px;
+}
+/* End Latest Post */
 
 /* End Content */
