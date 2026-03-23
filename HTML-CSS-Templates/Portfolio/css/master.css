@@ -521,8 +521,45 @@ h1::after{
         opacity: 0.1; 
     }
 }
-
-
 /* End Last Project */
+/* Start Reminders */
+
+.reminders li .circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+.reminders li::before{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 30px;
+}
+
+.reminders .blue::before,
+.reminders .blue .circle{
+
+    background-color: var(--blue-color);
+}
+.reminders .green::before,
+.reminders .green .circle{
+
+    background-color: var(--green-color);
+}
+.reminders .orange::before,
+.reminders .orange .circle{
+
+    background-color: orange;
+}
+.reminders .red::before,
+.reminders .red .circle
+{
+    background-color: var(--red-color);
+}
+
+/* Start Reminders */
+
 
 /* End Content */
