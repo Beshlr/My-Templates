@@ -162,6 +162,7 @@ ul{
     width: 32px;
     height: 32px;
     margin-left: 15px;
+    transition: 0.2s;
 }
 .header i{
     font-size: 20px;
@@ -589,4 +590,61 @@ h1::after{
 }
 /* End Latest Post */
 
+/* Start Social Media */
+.social-media .box i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    transition: 0.3s;
+}
+.social-media .box i:hover{
+    transform: rotate(5deg);
+}
+.social-media .box p{
+    margin: 0 0 0 55px;
+}
+
+.social-media .X{
+    background-color: #313232;
+}
+
+
+.social-media .facebook{
+    background-color: #D7E5FC;
+}
+.social-media .facebook i,
+.social-media .facebook .btn-shape{
+    background-color: #397DEE;
+}
+.social-media .facebook p{
+    color: #49B2F4;
+}
+
+.social-media .youtube{
+    background-color: rgb(255 0 0 / 20%);
+}
+.social-media .youtube i,
+.social-media .youtube .btn-shape{
+    background-color: red;
+}
+.social-media .youtube p{
+    color: red;
+}
+
+
+.social-media .linkedin{
+    background-color: rgb(48 122 179 / 20%);
+}
+.social-media .linkedin i,
+.social-media .linkedin .btn-shape{
+    background-color: #307AB3;
+}
+.social-media .linkedin p{
+    color: #307AB3;
+}
+
+
+
+/* End Social Media */
 /* End Content */

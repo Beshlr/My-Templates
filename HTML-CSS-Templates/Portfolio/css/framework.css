@@ -20,15 +20,18 @@
 .align-center{
     align-items: center;
 }
-.flex-center{
+.center-flex{
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 .between-flex{
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .around-flex{
+    display: flex;
     justify-content: space-around;
 }
 .f-wrap{
@@ -75,6 +78,9 @@
 .bg-green-alt{
     background-color: var(--green-alt-color);
 }
+.bg-black{
+    background-color: black;
+}
 .c-black{
     color: black;
 }
@@ -100,6 +106,9 @@
 /* Start Padding + Margin + Gap*/
 .p-10{
     padding: 10px;
+}
+.p-15{
+    padding: 15px;
 }
 .p-20{
     padding: 20px;
@@ -163,8 +172,12 @@
 .wd-fit{
     width: fit-content;
 }
-
 /* End width */
+/* Start Height */
+.h-full{
+    height: 100%;
+}
+/* End Height */
 
 /* End Padding + Margin */
 /* Start Position */
