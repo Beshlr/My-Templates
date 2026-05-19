@@ -643,8 +643,90 @@ h1::after{
 .social-media .linkedin p{
     color: #307AB3;
 }
-
-
-
 /* End Social Media */
+/* Start Projects */
+.projects .responsive-table{
+    overflow-x: auto;
+}
+.projects table{
+    min-width: 1000px;
+    border-spacing: 0;
+}
+.projects table td{
+    padding: 20px;
+}
+.projects table tbody tr:hover td{
+    background-color: #faf7f7;
+
+}
+.projects thead td{
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.projects tbody img:not(:first-of-type){
+    margin-left: -20px;
+}
+
+.projects tbody img{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+}
+.projects table tbody tr td:last-child{
+    border-right: 1px solid #eee;
+}
+.projects tbody td{
+    transition: 0.4s;
+    border-bottom: 1px solid #eee;
+    border-left: 1px solid #eee;
+}
+
+.projects tbody span{
+    font-size: 13px;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.projects tbody .pending span{
+    background-color: orange;
+}
+.projects tbody .completed span{
+    background-color: var(--green-color);
+}
+.projects tbody .progress span{
+    background-color: var(--blue-color);
+}
+.projects tbody .rejected span{
+    background-color: var(--red-color);
+}
+
+/* End Projects */
+
 /* End Content */
+
+/* Start Settings Page*/
+.settings-page{
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+.settings-page .close-message{
+    border: 1px solid #ccc;
+    resize: none;
+    min-height: 150px;
+}
+
+.settings-page .email{
+    display: inline-flex;
+    width: calc(100% - 80px);
+}
+
+.settings-page :disabled{
+    cursor: no-drop;
+    background-color: #F1F4F8;
+    color: #ddd;
+}
+
+/* End Settings Page*/
